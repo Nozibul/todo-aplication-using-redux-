@@ -30,6 +30,7 @@ const todoReducer = (state = initialState, action) =>{
                 ...state,
                 { id: nextTodoId(state) }
             ]
+            
         case TOGGLE:
             return state.map((todo)=> {
                if(todo.id === action.payload){
