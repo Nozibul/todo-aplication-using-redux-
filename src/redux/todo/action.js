@@ -14,7 +14,7 @@ export const toggle = (todoId) =>{
     }
 };
 
-export const colorSelect = ( color, todoId ) =>{
+export const colorSelect = (todoId, color ) =>{
    return {
       type: COLORSELECTED,
       payload:{

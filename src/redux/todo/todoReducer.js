@@ -12,7 +12,7 @@ const initialState = [
         id:2,
         text: 'Learn react',
         completed: false,
-        color: 'green'
+        color: ''
     },
 
 ]; 
