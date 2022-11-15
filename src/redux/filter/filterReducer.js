@@ -2,7 +2,7 @@ import { STATUSCHANGED, FILTERCOLOR } from "./actionType" ;
 
 const initialState = {
     status: 'ALL',
-    color: [] 
+    colors: [] 
 }
 
 const filterReducer = (state = initialState, action) =>{
@@ -19,13 +19,13 @@ const filterReducer = (state = initialState, action) =>{
             case 'added':
                 return{
                    ...state,
-                   color : [...state.color, color]
+                   colors: [...state.colors, color]
                 }
                 
             case 'removed':
                 return {
                     ...state,
-                    color: state.color.filter((existingColor)=> existingColor !== color )
+                    colors: state.colors.filter((existingColor)=> existingColor !== color )
                 }
         
             default:
